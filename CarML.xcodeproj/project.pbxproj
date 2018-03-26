@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362C87192069848400ADB491 /* Cars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 362C87182069848400ADB491 /* Cars.mlmodel */; };
 		36EA04DF2059997B00D1D313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EA04DE2059997B00D1D313 /* AppDelegate.swift */; };
 		36EA04E12059997B00D1D313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EA04E02059997B00D1D313 /* ViewController.swift */; };
 		36EA04E42059997B00D1D313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EA04E22059997B00D1D313 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		362C87182069848400ADB491 /* Cars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Cars.mlmodel; sourceTree = SOURCE_ROOT; };
 		36EA04DB2059997B00D1D313 /* CarML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EA04DE2059997B00D1D313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36EA04E02059997B00D1D313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		36EA04DD2059997B00D1D313 /* CarML */ = {
 			isa = PBXGroup;
 			children = (
+				362C87182069848400ADB491 /* Cars.mlmodel */,
 				36EA04DE2059997B00D1D313 /* AppDelegate.swift */,
 				36EA04E02059997B00D1D313 /* ViewController.swift */,
 				36EA04E22059997B00D1D313 /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				36EA04E12059997B00D1D313 /* ViewController.swift in Sources */,
 				36EA04DF2059997B00D1D313 /* AppDelegate.swift in Sources */,
+				362C87192069848400ADB491 /* Cars.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
