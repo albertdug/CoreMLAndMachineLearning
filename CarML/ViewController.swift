@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var priceLabel: UILabel!
     
-    let car = Cars()
+    let cars = Cars()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,20 @@ class ViewController: UIViewController {
         formater.maximumFractionDigits = 0
         let formatedKms = formater.string(for: self.kmsSlider.value) ?? "0"
         self.kmsLabel.text = "Kilometraje: \(formatedKms) kms"
+        
+        //Hacer el calculo del valor del auto
+        
+        if let prediction = try? cars.prediction(modelo: Double(self.modelSegmentedControl.selectedSegmentIndex), extras: self.extrasSwitch.isOn ? Double(1.0) : Double(0.0), kilometraje: Double(self.kmsSlider.value), estado: Double(self.statusSegmentedControl.selectedSegmentIndex)) {
+            
+            let clampValue =  max(500, prediction.price)
+            
+            formater.numberStyle = .currency
+            
+            self.priceLabel.text = formater.string(for: clampValue)
+            
+        } else {
+            self.priceLabel.text = "Error"
+        }
     }
     
     
